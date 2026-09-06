@@ -1,7 +1,17 @@
+""" 
+Author: Soheila Abbasi
+Date Created: 06/09/2026
+Description: Rock Paper Scissors game.
+"""
+
+
 import random
+from typing import List, Tuple
+
 
 class RockPaperScissors:
-    def __init__(self, name):
+    """ A simple Rock-Paper-Scissors game where a player can play against the computer."""
+    def __init__(self, name: str):
         self.choices = ["rock", "paper", "scissors"]
         self.player_name = name
 
@@ -13,10 +23,16 @@ class RockPaperScissors:
             print(f"Invalid choice, you must select from {self.choices}.")
             return self.get_player_choice()
 
+    """ Get the computer's choice randomly from the available choices."""
     def get_computer_choice(self):
         return random.choice(self.choices)
     
     def decide_winner(self, user_choice, computer_choice):
+        """ Decide the winner based on the rules of Rock-Paper-Scissors.
+        :param user_choice: The choice made by the player.
+        :param computer_choice: The choice made by the computer.
+        :return: A string indicating the result of the game.
+        """
         if user_choice == computer_choice:
             return "It's a   Tie!"
             
@@ -27,6 +43,12 @@ class RockPaperScissors:
 
         
     def play(self):
+        """ Play the game.
+          - Get the player's choice.
+          - Get the computer's choice.
+          - Decide the winner 
+          - print the result.
+          """
         user_choice = self.get_player_choice()
         computer_choice = self.get_computer_choice()
         print(self.decide_winner(user_choice, computer_choice))
