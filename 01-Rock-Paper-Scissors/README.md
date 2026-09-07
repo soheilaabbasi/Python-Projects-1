@@ -15,6 +15,12 @@ rock-paper-scissors/
 ## Requirements
 1. Python 3.7+ 
 
+To install the requirements:
+
+```bash
+pip install -r requirements.txt
+```
+
 ## Running the Project
 ```
 python src/game.py
