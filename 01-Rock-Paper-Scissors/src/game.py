@@ -23,15 +23,19 @@ class RockPaperScissors:
             print(f"Invalid choice, you must select from {self.choices}.")
             return self.get_player_choice()
 
-    """ Get the computer's choice randomly from the available choices."""
     def get_computer_choice(self):
+        """ Get the computer's choice randomly from the available choices."""
         return random.choice(self.choices)
     
     def decide_winner(self, user_choice, computer_choice):
         """ Decide the winner based on the rules of Rock-Paper-Scissors.
+
         :param user_choice: The choice made by the player.
+        :type user_choice: str
         :param computer_choice: The choice made by the computer.
+        :type computer_choice: str
         :return: A string indicating the result of the game.
+        :rtype: str
         """
         if user_choice == computer_choice:
             return "It's a   Tie!"
