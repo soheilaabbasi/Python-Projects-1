@@ -5,6 +5,14 @@
 The 'Password Generator Dashboard' is an interactive web application built with Python and Streamlit. It allows users to generate different types of passwords quickly, either randomly, as a memorable sequence of words, or as a pin code, based on their preferences.
 
 ## Project Structure
+```
+.
+├─ README.md
+├─ requirements.txt
+└─ src
+   ├─ app.py
+   └─ password_generators.py
+```
 
 The project has the following structure:
 - `password_generators.py`: A Python module containing the password generators classes; `RandomPasswordGenerator`, `MemorablePasswordGenerator`, and `PinCodeGenerator`.
