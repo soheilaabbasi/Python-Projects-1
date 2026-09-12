@@ -23,7 +23,7 @@ This implementation solves the famous Monty Hall problem, presenting an interact
 
 ## Requirements
 
-- Python 3.7 or higher
+- Python 3.14 or higher
 - Streamlit
 
 To install necessary packages, run `pip install -r requirements.txt`.
